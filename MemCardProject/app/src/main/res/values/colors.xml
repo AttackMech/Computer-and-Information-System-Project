@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#555555</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#777777</color>
+
+    <color name="colorHighlight">#555555</color>
+    <color name="semi_trans">#80000000</color>
+
+    <color name="sets">#EE2222</color>
+    <color name="cards">#EE4411</color>
+    <color name="test">#2222EE</color>
+    <color name="game">#772277</color>
+
+    <color name="setWhite">#EEEEEE</color>
+    <color name="setBlack">#000000</color>
+    <color name="setGrey">#888888</color>
+    <color name="setBlue">#000099</color>
+    <color name="setGreen">#008800</color>
+    <color name="setRed">#DD0000</color>
+    <color name="setCyan">#00CCCC</color>
+    <color name="setYellow">#F0F000</color>
+    <color name="setViolet">#990099</color>
+    <color name="setOrange">#EE8800</color>
+    <color name="setPink">#FFB0FF</color>
+    <color name="setBrown">#996633</color>
+</resources>

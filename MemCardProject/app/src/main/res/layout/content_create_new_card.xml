@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bishop.jason.memcardproject.CreateNewCardActivity"
+    tools:showIn="@layout/activity_create_new_card" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:text="@string/card_front"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/standard_padding" />
+
+    <EditText
+        android:id="@+id/editTextCardFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:layout_marginLeft="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:textSize="@dimen/input_text"
+        android:hint="@string/hint_card_front"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginStart="@dimen/standard_padding" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/double_padding"
+        android:text="@string/card_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCardFront"
+        android:layout_marginStart="@dimen/standard_padding" />
+
+    <EditText
+        android:id="@+id/editTextCardBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:layout_marginLeft="@dimen/standard_padding"
+        android:layout_marginStart="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:textSize="@dimen/input_text"
+        android:hint="@string/hint_card_back"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/extra_large_padding"
+        android:text="@string/card_set_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCardBack"
+        android:layout_marginStart="@dimen/standard_padding" />
+
+    <Spinner
+        android:id="@+id/spinnerSetSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_padding"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginLeft="@dimen/standard_padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="@dimen/standard_padding" />
+
+    <Button
+        android:id="@+id/buttonCancelCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/new_card_button_padding"
+        android:onClick="endActivity"
+        android:text="@string/cancel_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonSaveCard"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSetSelect" />
+
+    <Button
+        android:id="@+id/buttonSaveCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/new_card_button_padding"
+        android:onClick="saveCard"
+        android:text="@string/save_button"
+        app:layout_constraintLeft_toRightOf="@+id/buttonCancelCard"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSetSelect" />
+
+</android.support.constraint.ConstraintLayout>

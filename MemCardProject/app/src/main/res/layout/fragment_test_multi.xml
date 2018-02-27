@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bishop.jason.memcardproject.TestMultiFragment" >
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choices"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/standard_padding"
+        app:layout_constraintBottom_toBottomOf="@+id/includeCardFront"
+        android:layout_marginBottom="@dimen/standard_padding"
+        app:layout_constraintTop_toTopOf="@+id/includeCardFront"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:layout_marginStart="@dimen/standard_padding" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_padding"
+        android:layout_marginLeft="@dimen/standard_padding"
+        android:layout_marginStart="@dimen/standard_padding"
+        android:text="@string/choices"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupChoices"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioGroupChoices" />
+
+    <include
+        android:id="@+id/includeCardBack"
+        layout="@layout/card_viewer_card_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:layout_marginStart="@dimen/standard_padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView12"
+        android:layout_marginLeft="@dimen/standard_padding" />
+
+    <include
+        android:id="@+id/includeCardFront"
+        layout="@layout/card_viewer_card_front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/standard_padding"
+        app:layout_constraintLeft_toRightOf="@+id/textView12"
+        android:layout_marginLeft="@dimen/standard_padding"
+        android:layout_marginStart="@dimen/standard_padding" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupChoices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_padding"
+        app:layout_constraintTop_toBottomOf="@+id/includeCardFront"
+        android:layout_marginLeft="@dimen/standard_padding"
+        app:layout_constraintLeft_toLeftOf="@+id/includeCardFront"
+        android:layout_marginRight="@dimen/standard_padding"
+        app:layout_constraintRight_toRightOf="@+id/includeCardFront" >
+
+        <RadioButton
+            android:id="@+id/radioButtonChoice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/no_padding"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:layout_marginLeft="@dimen/no_padding"
+            android:layout_marginStart="@dimen/no_padding"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="@dimen/standard_padding"
+            android:layout_marginEnd="@dimen/standard_padding"
+            app:layout_constraintRight_toRightOf="@+id/includeCardFront" />
+
+        <RadioButton
+            android:id="@+id/radioButtonChoice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding"
+            app:layout_constraintTop_toBottomOf="@+id/radioButtonChoice1"
+            android:layout_marginLeft="@dimen/no_padding"
+            android:layout_marginStart="@dimen/no_padding"
+            app:layout_constraintLeft_toLeftOf="@+id/radioButtonChoice1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonChoice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/no_padding"
+            android:layout_marginStart="@dimen/no_padding"
+            app:layout_constraintLeft_toLeftOf="@+id/radioButtonChoice2"
+            android:layout_marginTop="@dimen/small_padding"
+            app:layout_constraintTop_toBottomOf="@+id/radioButtonChoice2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonNextQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/next_question"
+        android:minHeight="@dimen/zero_width"
+        android:minWidth="@dimen/zero_width"
+        android:padding="@dimen/standard_padding"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/includeCardFront"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="setColourValues">
+        <item >0xEEEEEE</item>
+        <item >0x000000</item>
+        <item >0x888888</item>
+        <item >0x000099</item>
+        <item >0x008800</item>
+        <item >0xDD0000</item>
+        <item >0x00CCCC</item>
+        <item >0xF0F000</item>
+        <item >0x990099</item>
+        <item >0xEE8800</item>
+        <item >0xFFB0FF</item>
+        <item >0x996633</item>
+    </integer-array>
+
+    <string-array name="setColourNames">
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Brown</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>Pink</item>
+        <item>Red</item>
+        <item>Violet</item>
+    </string-array>
+
+    <integer-array name="gameLayouts">
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+        <item>@id/layoutPosition1</item>
+    </integer-array>
+
+</resources>

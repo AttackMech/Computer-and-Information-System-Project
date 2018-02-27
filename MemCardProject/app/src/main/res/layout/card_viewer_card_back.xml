@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewBack"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginBottom="@dimen/standard_padding"
+        android:layout_marginEnd="@dimen/standard_padding"
+        android:layout_marginLeft="@dimen/standard_padding"
+        android:layout_marginRight="@dimen/standard_padding"
+        android:layout_marginStart="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/standard_padding"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_progress"
+                android:textSize="@dimen/descriptor_text"
+                android:layout_marginBottom="@dimen/small_padding"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewCardProgress"
+                android:layout_marginRight="@dimen/standard_padding"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="@dimen/standard_padding"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/standard_padding"
+                android:layout_marginEnd="@dimen/standard_padding" />
+
+            <ImageView
+                android:id="@+id/imageViewCardSetColourBack"
+                android:layout_width="@dimen/set_colour_size"
+                android:layout_height="@dimen/card_height"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="contentDescription" />
+
+            <ImageView
+                android:id="@+id/imageViewCardProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/level6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/standard_padding"
+                android:layout_marginRight="@dimen/standard_padding"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="@dimen/standard_padding"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/standard_padding"
+                android:layout_marginEnd="@dimen/standard_padding"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textViewCardBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/input_text"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/standard_padding"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/standard_padding"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0.505"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/complete"
+                android:textSize="@dimen/micro_text"
+                android:textColor="@color/setYellow"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewCardProgress"
+                android:layout_marginBottom="@dimen/standard_padding"
+                app:layout_constraintTop_toTopOf="@+id/imageViewCardProgress"
+                android:layout_marginTop="@dimen/standard_padding"
+                android:layout_marginRight="@dimen/standard_padding"
+                app:layout_constraintRight_toRightOf="@+id/imageViewCardProgress"
+                android:layout_marginLeft="@dimen/standard_padding"
+                app:layout_constraintLeft_toLeftOf="@+id/imageViewCardProgress"
+                android:visibility="invisible" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
